@@ -1,0 +1,25 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+ /* Asegura que todas las tarjetas tengan el mismo ancho y alto */
+ .card {
+  width: 300px; 
+  height: 400px; 
+}
+
+/* Para asegurarte de que el texto y la imagen se adapten correctamente */
+.card-img-top {
+  height: 200px; /* Ajusta la altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+/* Asegura que el texto no exceda el alto de la tarjeta */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height:200px; /* Limita la altura del cuerpo de la tarjeta */
+  overflow-y: auto; /* Añade un scroll vertical si el contenido es más grande */
+}
+
